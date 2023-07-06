@@ -1,0 +1,584 @@
+body{
+
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #f3f5fc;
+    transition: 300ms ease all;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+
+main{
+
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.logo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2em;
+    width: 10vw;
+
+}
+
+.logo img{
+
+    width: 100%;
+
+}
+
+.logo button{
+
+    width: auto;
+    padding: 0;
+    
+}
+
+.menu{
+
+    width: 60vw;
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-texto{
+
+    width: 70%;
+
+}
+
+.texto{
+
+    width: 100%;
+    height: 70vh;
+    border: none; 
+    background:none;
+    resize: none;
+    color: #0a3871;
+    outline: none;
+    font-size: 2.5em;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.texto::placeholder{
+
+    color: #0a3871;
+
+}
+
+.menu-botones{
+
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    padding-top: 1em;
+
+}
+
+.menu-botones small{
+
+    color: #495057;
+    font-weight: 500;
+    display: flex;
+    align-items: end;
+
+}
+
+.menu-botones small img{
+
+    padding-right: 0.25em;
+
+}
+
+.botones{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+}
+
+main button,.btn-copiar{
+
+    padding: 1em;
+    width: 100%;
+    border-radius: 1em;
+    border: 2px solid #0a3871;
+    transition: 300ms ease all;
+
+}
+
+.btn-encriptar{
+
+    background-color: #0a3871;
+    color: #ffffff;
+    font-weight: 500;
+
+}
+
+.btn-encriptar:hover{
+
+    background-color: #164e93;
+    border-color: #164e93;
+    cursor: pointer;
+
+}
+
+.btn-desencriptar, .btn-copiar{
+
+    background-color: transparent;
+    font-weight: 500;
+    color: #0a3871;
+
+}
+
+.btn-desencriptar:hover, .btn-copiar:hover{
+
+    background-color: #d8dfe8;
+    cursor: pointer;
+
+}
+
+.salida{
+
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor{
+
+    background-color: #ffffff;
+    width: 75%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    box-shadow: 0em 0em 2em 1em #00000030;
+    position: static;
+
+}
+
+.display{
+
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.no-active{
+
+    padding: 2em;
+    text-align: center;
+
+}
+
+.no-active img{
+
+    width: 100%;
+
+}
+
+.copiar-on{
+
+    height: auto;
+    width: 90%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+
+}
+
+.texto-a-copiar{
+
+    margin: 1em;
+    width: 100%;
+    height: 100%;
+    border: none; 
+    background: none;    
+    resize: none;
+    color: #0a3871;
+    outline: none;
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+
+}
+
+footer{
+  
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    
+}
+
+footer a{
+
+    padding: 0.5em;
+
+}
+
+.footer1{
+
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding: 2em 0;
+
+}
+
+.footer1 img{
+
+    width: 20%;
+
+}
+
+.menu-footer{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer1 a{
+
+    display: flex;
+    align-items: center;
+    color: #c8c8c8;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+
+.footer1 a{
+
+    transition: 300ms ease all;
+
+}
+
+.footer1 a:hover{
+
+    color: #ffae61;
+
+}
+
+.footer1 p{
+
+    color: #c8c8c8;
+    width: 30%;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    text-align: end;
+
+}
+
+.footer2{
+
+    border-top: 2px solid #c8c8c8;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+
+}
+
+.footer2 p{
+
+    width: 50%;
+    font-size: 1em;
+    color: #c8c8c8;
+    display: flex;
+    align-items: center;
+
+}
+
+.redes-sociales{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+
+}
+
+.footer2 a{
+
+    padding: 0.5em;
+
+}
+
+footer svg{
+
+    transition: 300ms ease all;
+    fill: #ffffff;
+    display: flex;
+    align-items: center;
+
+}
+
+.facebook svg{
+
+    border-radius: 30%;
+
+}
+
+.facebook svg:hover{
+
+    background-color: #1977f3;
+
+}
+
+.instagram svg{
+
+    border-radius: 30%;
+
+}
+
+.instagram svg:hover{
+
+    background: radial-gradient(
+
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515efc
+
+    );
+
+}
+
+.linkedin svg{
+
+    border-radius: 15%;
+
+}
+
+.linkedin svg:hover{
+
+    background-color: #00669c;
+
+}
+
+/* Dark mode */
+
+.dark-mode{
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+
+}
+
+.switch{
+
+    display: inline-block;
+    background-color: #343d5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+
+}
+
+.switch::after{
+
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: 300ms ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+
+}
+
+.switch.active{
+
+    background-color: orange;
+    color: black;
+
+}
+
+.switch.active::after{
+
+    right: 0;
+    left: unset;
+
+}
+
+.switch span{
+
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;    
+    background:none;
+    color: #f3f5fc;
+
+}
+
+/* Fin dark mode*/
+
+/* Dark mode activo */
+
+body.dark{
+
+    background-color: #222222;
+
+}
+
+body.dark .texto, body.dark .texto::placeholder, body.dark .menu-botones small, body.dark .texto-a-copiar{
+
+    color: #c8c8c8;
+    
+}
+
+body.dark .contenedor{
+
+    background-color: #111111;
+    color: #c8c8c8;
+    box-shadow: 0em 0em 2em 1em #FFFFFF30;
+
+}
+
+body.dark .btn-copiar, body.dark .btn-desencriptar{
+
+    color: #c8c8c8;
+    border-color: #c8c8c8;
+
+}
+
+body.dark .btn-desencriptar:hover, body.dark .btn-copiar:hover{
+
+    background-color: #00000090;
+    cursor: pointer;
+
+}
+
+/* Fin de dark mode activo */
+
+/* Responsive design */
+
+@media screen and (max-width: 1023px){
+
+    main{
+
+        flex-direction: column;
+        height: 125vh;
+
+    }
+
+    .logo, .menu, .salida, .contenedor{
+
+        width: 100%;
+
+    }
+
+    .logo{
+
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .logo img{
+
+        width: 20%;
+
+    }
+
+    .dark-mode{
+
+        height: auto;
+        width: 80%;
+        display: flex;
+        justify-content: end;
+        padding: 0 2em 0 0;
+        
+    }
+
+    .menu{
+
+        padding-top: 5vh;
+
+    }
+
+    .contenedor-texto{
+
+        width: 100%;
+        padding: 2em;
+
+    }
+
+    .texto{
+
+        height: 50vh;
+
+    }
+
+    .contenedor{
+
+        margin: 2em;
+
+    }
+   
+    .salida, .contenedor{
+
+        height: 40vh;
+
+    }
+
+    .no-active img{
+
+        display: none;
+
+    }
+
+    footer{
+
+        /* display: none; */
+
+    }
+
+}
+
+/* Fin responsive design */
